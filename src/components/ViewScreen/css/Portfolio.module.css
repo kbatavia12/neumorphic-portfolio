@@ -1,0 +1,18 @@
+.portfolioContainer {
+    width: 100%;
+}
+
+
+.cardHolder {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+@media only screen and (max-width: 600px) {
+    .cardHolder {
+        flex-direction: column;
+        justify-content: center;        
+        align-items: center;        
+    }
+}
