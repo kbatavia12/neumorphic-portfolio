@@ -1,6 +1,7 @@
 import React from 'react'
 import { useScreen } from '../../ScreenContext';
 import AboutScreen from './AboutScreen';
+import ContactScreen from './ContactScreen';
 import styles from './css/index.module.css';
 import HomeScreen from './HomeScreen';
 import Portfolio from './Portfolio';
@@ -18,6 +19,8 @@ const Screen = ({ screenName }: ScreenProps) => {
             return <AboutScreen/>
         case "portfolio":
             return <Portfolio/>
+        case "contact":
+            return <ContactScreen/>
         default:
             return <HomeScreen/>
     }

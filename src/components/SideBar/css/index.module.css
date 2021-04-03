@@ -3,8 +3,12 @@
     /* border: 1px solid black; */
     display: grid;
     grid-template: 25% 15% 60% / 100%;
+    /* overflow: scroll; */
 }
 
+/* .mainSidebar::-webkit-scrollbar {
+    display: none;
+} */
 
 .imageContainer {
     grid-area: 1 / 1 / span 1 / span 1;
@@ -17,8 +21,8 @@
 }
 
 .profilePhoto {
-    width: 50%;
-    height: 100%;
+    width: 45%;
+    height: 90%;
     border-radius: 50%;
 }
 
@@ -32,6 +36,7 @@
     overflow: hidden;
     font-size: 1em;
     letter-spacing: .15em;
+    margin-top: 2%;
 }
 
 .sectionContainer {
@@ -48,5 +53,15 @@
         width: 35%;
         height: 90%;
         border-radius: 50%;
+    }
+}
+
+
+@media only screen and (min-width: 768px) {
+    .mainSidebar {
+        overflow: scroll;
+    }
+    .mainSidebar::-webkit-scrollbar {
+        display: none;
     }
 }

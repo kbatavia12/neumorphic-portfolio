@@ -1,5 +1,5 @@
 import React from 'react'
-import { ScreenType, useScreen } from '../../ScreenContext';
+import { useScreen } from '../../ScreenContext';
 import styles from './css/SidebarButton.module.css';
 
 
@@ -10,7 +10,6 @@ interface Props {
 
 const SidebarButton = ({ name, onClick }: Props) => {
 
-    const {screen, setScreen}= useScreen();
     
     return (
         <button onClick = {onClick} className = {styles.buttonContainer} >

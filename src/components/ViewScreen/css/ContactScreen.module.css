@@ -1,0 +1,47 @@
+.contactContainer {
+    width: 100%;
+    position: relative;
+    align-items: center;
+}
+
+.contactDetails {
+    margin-top: 2%;
+}
+
+.socialIconsContainer {
+    box-shadow: inset 6px 6px 12px #4f728e,
+            inset -6px -6px 12px #a3eeff;
+    padding: 1.5%;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.map {
+    width: 100%;
+    margin-top: 2%;
+}
+
+.iconContainer {
+    box-shadow: inset 3px 3px 6px #4f728e,
+            inset -3px -3px 6px #a3eeff;
+    padding: 3%;
+    border-radius: 25%;
+}
+
+.materialIconGithub, .materialIconLinkedIn {
+    transition: all 3s ease-in-out;
+}
+
+.materialIconGithub:hover{
+    color: darkgreen;
+}
+
+.materialIconLinkedIn:hover{
+    color: #000080;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}

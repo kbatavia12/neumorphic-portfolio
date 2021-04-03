@@ -5,6 +5,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    word-wrap: break-word;
     /* width: 100%; */
 }
 
@@ -35,3 +36,12 @@
     from, to { border-color: transparent }
     50% { border-color: black; }
   }
+
+@media only screen and (max-width: 600px) {
+     .homeContainer > h3 {
+        animation: none;
+        word-wrap: break-word;
+        letter-spacing: 0;
+        font-size: 1.1em;
+    }
+}

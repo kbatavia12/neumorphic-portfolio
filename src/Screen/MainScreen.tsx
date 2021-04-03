@@ -5,6 +5,8 @@ import styles from './css/MainScreen.module.css';
 
 
 const MainScreen = () => {
+    
+    console.log(window.screen.width, window.screen.height)
     return (
         <div className={styles.mainContainer} >
             <div className = {styles.sidebarContainer} >
